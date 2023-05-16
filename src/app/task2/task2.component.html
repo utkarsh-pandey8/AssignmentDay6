@@ -1,0 +1,13 @@
+<p>task2 works!</p>
+<table border="1">
+    <tr>
+        <td [ngStyle]="{color:colors, 'background-color':backgroundColor, 'font-size':fontSize}">First Name</td>
+        <th>Last Name</th>
+        <th>Age</th>
+    </tr>
+    <tr *ngFor = "let t of getTrainees()">
+        <td>{{t.fName}}</td>
+        <td>{{t.lName}}</td>
+        <td>{{t.age}}</td>
+    </tr>
+</table>
